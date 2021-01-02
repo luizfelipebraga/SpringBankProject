@@ -1,165 +1,61 @@
 # Spring Bank Project
-![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/main/testegit.jpg?raw=true)
+![alt text](https://fernandofranzini.files.wordpress.com/2018/04/1_gycg7f5bylur4ut_jaes7a.png?raw=true)
 
 
-   ### Aplicação em API REST usando o Spring Framework utilizando a IDE Visual Studio Code com o intuito de simular um cadastro de um usuário no banco para realização do teste criado pela Orange Talents.
+   ### Aplicação em API REST usando o Spring Framework utilizando a IDE Visual Studio Code, com o intuito de simular um cadastro de um usuário no banco para realização do teste criado pela Orange Talents.
 
    ## Dependências
 
-- Web: Projeto API REST
+- Web: Projeto API REST.
 - JPA: Armazenar dados em um banco de dados.
-- Swagger: Fazer a documentação  e utillizar-lo para fazer as requisições.
-- Lambok: Biblioteca Java focada em produtividade e redução de código
+- Swagger: Fazer a documentação  e utiliza-lo para fazer as requisições.
+- Lambok: Biblioteca Java focada em produtividade e redução de código.
+- MySQLConnector: Fazer a conexão com o banco de dados.
 
 ## Tecnologias
 
-  * [Docker] : Virtualização do MYSQL na máquina
-  * [Dbeaver] : Manipulação do Banco Relacional MYSQL
+  * [Docker] : Virtualização do MYSQL na máquina.
+  * [Dbeaver] : Manipulação do Banco Relacional MYSQL.
+
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/mysql.png?raw=true)
+  
 
 ## Organização de Pastas
-!image
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/allFolders.png?raw=true)
   
-  ### Business: Pasta que define a regra de negócio da nossa aplicação.
-  É divida em  interface e a implementação da mesma
-  !image
+  ### Business: Define a regra de negócio da nossa aplicação.
+  ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/business.png?raw=true)
+  
+    divida em interface e a implementação.
+  
 
-  ### Config: Pasta que configura o Swagger
-  !image
+  ### Config: Configuração do Swagger
+  ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/swagger.png?raw=true)
 
-  ### Controller: Pasta que se encontra os métodos de requisição da nossa aplicação 
-  Controla e valida os dados que o usuário inseriu
-  !image
+  ### Controller: Métodos de requisição da nossa aplicação 
+  ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/clientController.png?raw=true)
+
+    Controla e valida os dados que o usuário inseriu.
 
   ### DTO (Data Transfer Obejct) : Padrão de projetos para segurança de dados.
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/dtos.png?raw=true)
 
-> Exibe apenas para o usuário dados necessários para o preenchimento do formulário, assim fortalecendo a segurança da aplicação. 
+    Exibe apenas para o usuário dados necessários para o preenchimento do formulário, assim fortalecendo a segurança da aplicação. 
 
 ### Entity: Entidades do projeto
-!image
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/entidades%20criadas.png?raw=true)
 
-### Enums: Mensagem customizada de validação
-!image
-### Exception: Tratação das exceptions da aplicação
-!image
+### Enums: Mensagem customizada de duplicação de Cpf e Email
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/duplicatedDocumentAndEmail.png?raw=true)
+### Exception: Tratamento das exceptions da aplicação
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/exceptions.png?raw=true)
 
-### Mapper: Mapeamento das classes.
-!image
+### Mapper: Mapeamento de objeto para um DTO.
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/mapper.png?raw=true)
 ### Repository: Armazenamento dos dados enviados pelo usuário.
-!image
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/repositories.png?raw=true)
 
-Visualização mais ampla do projeto: [Spring Bank Repository][luizfelipebraga]
- on GitHub.
-
-### Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
-
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
-
-### Plugins
-
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
-
-### Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-```sh
-$ node app
-```
-
-Second Tab:
-```sh
-$ gulp watch
-```
-
-(optional) Third:
-```sh
-$ karma test
-```
-#### Building for source
-For production release:
-```sh
-$ gulp build --prod
-```
-Generating pre-built zip archives for distribution:
-```sh
-$ gulp build dist --prod
-```
-### Docker
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
-
-```sh
-cd dillinger
-docker build -t joemccann/dillinger:${package.json.version} .
-```
-This will create the dillinger image and pull in the necessary dependencies. Be sure to swap out `${package.json.version}` with the actual version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart="always" <youruser>/dillinger:${package.json.version}
-```
-
-Verify the deployment by navigating to your server address in your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-``
-127.0.0.1:8000
-``
-
-#### Kubernetes + Google Cloud
-
-See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
-
-
-### Todos
-
- - Write MORE Tests
- - Add Night Mode
-
-License
-----
-
-MIT
-
-
-**Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+### Visualização mais ampla do projeto: [Spring Bank Repository][luizfelipebraga] no GitHub.
 
 
    [luizfelipebraga]: <https://github.com/luizfelipebraga/SpringBankProject>
@@ -178,9 +74,3 @@ MIT
    [Docker]: <http://docker.com>
    [Dbeaver]: <http://Dbeaver.com>
 
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>

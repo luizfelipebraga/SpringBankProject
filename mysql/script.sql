@@ -1,5 +1,5 @@
 create table Bank(
-   id NUMERIC NOT NULL AUTO_INCREMENT,
+   id INT NOT NULL AUTO_INCREMENT,
    name VARCHAR(100) NOT NULL,
    description VARCHAR(200) NULL,
    PRIMARY KEY (id)
@@ -7,8 +7,8 @@ create table Bank(
 
 
 create table Account(
-   id NUMERIC NOT NULL AUTO_INCREMENT,
-   id_bank NUMERIC NOT NULL,
+   id INT NOT NULL AUTO_INCREMENT,
+   id_bank INT NOT NULL,
    account INT NOT NULL,
    agency INT NOT NULL,
    account_digit INT NOT NULL,
@@ -18,8 +18,8 @@ create table Account(
 
 
 create table Client(
-   id NUMERIC NOT NULL AUTO_INCREMENT,
-   id_account NUMERIC NOT NULL,
+   id INT NOT NULL AUTO_INCREMENT,
+   id_account INT NOT NULL,
    name VARCHAR(240) NOT NULL,
    email VARCHAR(300) NOT NULL,
    document VARCHAR(14) NOT NULL,
@@ -37,5 +37,5 @@ INSERT INTO orange.Account
 VALUES(1, 123123, 1010, 2);
 
 INSERT INTO orange.Client
-(id_account, name, email, document, dt_birth_date)
+(id_account, name, email, document, birth_date)
 VALUES(1, 'Felipe', 'ruivolfb@gmail.com', '333.222.222-22', '2003-04-10');

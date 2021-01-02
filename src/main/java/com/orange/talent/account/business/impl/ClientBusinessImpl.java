@@ -42,13 +42,13 @@ public class ClientBusinessImpl implements ClientBusiness {
     public ClientResponseDTO insertClient(ClientFormDTO clientFormDTO) throws ValidationFailedException {
 
 
-        if (clientRepository.findByDocument(clientFormDTO.getDocument()).isPresent()){
-            throw new ValidationFailedException(ClientValidationEnum.DOCUMENT_REGISTRED);
-        }
+        // if (clientRepository.findByDocument(clientFormDTO.getDocument()).isPresent()){
+        //     throw new ValidationFailedException(ClientValidationEnum.DOCUMENT_REGISTRED);
+        // }
 
-        if (clientRepository.findByEmail(clientFormDTO.getEmail()).isPresent()){
-            throw new ValidationFailedException(ClientValidationEnum.EMAIL_REGISTRED);
-        }
+        // if (clientRepository.findByEmail(clientFormDTO.getEmail()).isPresent()){
+        //     throw new ValidationFailedException(ClientValidationEnum.EMAIL_REGISTRED);
+        // }
 
         MapperConverter mapper = MapperConverter.convert();
 
@@ -56,13 +56,13 @@ public class ClientBusinessImpl implements ClientBusiness {
 
         Optional<Bank> bank = bankRepository.findById(1L);
 
-        Account account = Account.builder()
-                    .account(ThreadLocalRandom.current().nextInt())
-                    .agency(ThreadLocalRandom.current().nextInt())
-                    .accountDigit(ThreadLocalRandom.current().nextInt())
-                    .bank(bank.get()).build();
+        // Account account = Account.builder()
+        //             .account(ThreadLocalRandom.current().nextInt())
+        //             .agency(ThreadLocalRandom.current().nextInt())
+        //             .accountDigit(ThreadLocalRandom.current().nextInt())
+        //             .bank(bank.get()).build();
 
-        client.setAccount(accountRepository.save(account));
+        // client.setAccount(accountRepository.save(account));
 
        return mapper.map(clientRepository.save(client), ClientResponseDTO.class);
     }

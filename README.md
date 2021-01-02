@@ -26,6 +26,8 @@
   ### Business: Define a regra de negócio da nossa aplicação.
   ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/business.png?raw=true)
   
+ ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/clientBusiness.png?raw=true)
+  
     divida em interface e a implementação.
   
 
@@ -34,11 +36,16 @@
 
   ### Controller: Métodos de requisição da nossa aplicação 
   ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/clientController.png?raw=true)
+  
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/clientControllerInside.png?raw=true)
+  
 
     Controla e valida os dados que o usuário inseriu.
 
   ### DTO (Data Transfer Obejct) : Padrão de projetos para segurança de dados.
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/dtos.png?raw=true)
+
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/dtoClientForm.png?raw=true)
 
     Exibe apenas para o usuário dados necessários para o preenchimento do formulário, assim fortalecendo a segurança da aplicação. 
 

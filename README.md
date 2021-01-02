@@ -52,8 +52,11 @@
 ### Entity: Entidades do projeto
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/entidades%20criadas.png?raw=true)
 
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/entityClient.png?raw=true)
 ### Enums: Mensagem customizada de duplicação de Cpf e Email
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/duplicatedDocumentAndEmail.png?raw=true)
+
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/clientValidation.png?raw=true)
 ### Exception: Tratamento das exceptions da aplicação
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/exceptions.png?raw=true)
 
@@ -61,6 +64,8 @@
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/mapper.png?raw=true)
 ### Repository: Armazenamento dos dados enviados pelo usuário.
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/repositories.png?raw=true)
+
+![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/respositoryClient.png?raw=true)
 
 ### Visualização mais ampla do projeto: [Spring Bank Repository][luizfelipebraga] no GitHub.
 

@@ -40,7 +40,7 @@
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/clientControllerInside.png?raw=true)
   
 
-    Controla e valida os dados que o usuário inseriu.
+    Controla e valida os dados que o usuário inseriu e retorna um status code 201 caso os dados foram válidos e 404 para erro na validação.
 
   ### DTO (Data Transfer Obejct) : Padrão de projetos para segurança de dados.
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/dtos.png?raw=true)

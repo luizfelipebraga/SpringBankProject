@@ -4,7 +4,7 @@
 
    ### Aplicação em API REST usando o Spring Framework utilizando a IDE Visual Studio Code, com o intuito de simular um cadastro de um usuário no banco para realização do teste criado pela Orange Talents.
 
-   ## Dependências
+   ## Dependências Spring Framework
 
 - Web: Projeto API REST.
 - JPA: Armazenar dados em um banco de dados.
@@ -62,7 +62,7 @@
 
 ### Mapper: Mapeamento de objeto para um DTO.
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/mapper.png?raw=true)
-### Repository: Armazenamento dos dados enviados pelo usuário.
+### Repository: Classe utilizada pelo jpa para efetuar as operações ao banco de dados. Querys como findById, save.
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/repositories.png?raw=true)
 
 ![alt text](https://github.com/luizfelipebraga/SpringBankProject/blob/testBranch/img/respositoryClient.png?raw=true)

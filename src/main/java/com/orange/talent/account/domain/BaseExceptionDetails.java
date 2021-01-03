@@ -2,11 +2,6 @@ package com.orange.talent.account.domain;
 
 import com.orange.talent.account.enums.SeverityEnum;
 
-/**
- * Interface to mark and unify the exception details in the application.
- *
- * @author rogerio.morais@koin.com.br
- */
 public interface BaseExceptionDetails {
 
     String getMessage();

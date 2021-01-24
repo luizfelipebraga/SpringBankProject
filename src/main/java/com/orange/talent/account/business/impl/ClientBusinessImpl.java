@@ -7,7 +7,6 @@ import com.orange.talent.account.entity.Account;
 import com.orange.talent.account.entity.Bank;
 import com.orange.talent.account.entity.Client;
 import com.orange.talent.account.enums.ClientValidationEnum;
-import com.orange.talent.account.exception.BusinessException;
 import com.orange.talent.account.exception.ValidationFailedException;
 import com.orange.talent.account.mapper.MapperConverter;
 import com.orange.talent.account.repository.AccountRepository;

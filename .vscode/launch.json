@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AccountApplication<account>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.orange.talent.account.AccountApplication",
+            "projectName": "account",
+            "args": ""
+        }
+    ]
+}

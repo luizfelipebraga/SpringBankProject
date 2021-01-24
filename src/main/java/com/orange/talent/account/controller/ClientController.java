@@ -18,13 +18,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("v1/")
-@Api(value="Client Controller", tags = "Controller de cadastro de cliente")
+@Api(value = "Client Controller", tags = "Controller de cadastro de cliente")
 public class ClientController {
 
-    //injecao de depedencias;
+    // injecao de depedencias;
     @Autowired
     ClientBusiness clientBusiness;
-
 
     @GetMapping("client/findByName")
     @ApiOperation(httpMethod = "GET", value = "buscar por nome", notes = "buscar por nome irá retornar uma lista de clientes que contém esse nome", response = ClientResponseDTO.class)
@@ -35,16 +34,17 @@ public class ClientController {
 
     @PostMapping("client")
     @ApiOperation(httpMethod = "POST", value = "Cadastro de cliente", notes = "Cadastro de cliente com validação")
-    public ResponseEntity<Object> insertClient(@ApiParam("formClient") @RequestBody @Valid ClientFormDTO clientFormDTO) {
+    public ResponseEntity<Object> insertClient(
+            @ApiParam("formClient") @RequestBody @Valid ClientFormDTO clientFormDTO) {
 
         try {
             return new ResponseEntity<Object>(clientBusiness.insertClient(clientFormDTO), HttpStatus.CREATED);
 
-            } catch (ValidationFailedException e) {
-                HashMap<String, Object> result = new HashMap<>();
-                result.put("error", true);
-                result.put("error_message", e.getMessage());
-                return new ResponseEntity<Object>(result, HttpStatus.BAD_REQUEST);
+        } catch (ValidationFailedException e) {
+            HashMap<String, Object> result = new HashMap<>();
+            result.put("error", true);
+            result.put("error_message", e.getMessage());
+            return new ResponseEntity<Object>(result, HttpStatus.BAD_REQUEST);
         }
 
     }

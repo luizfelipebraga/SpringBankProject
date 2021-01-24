@@ -8,5 +8,6 @@ import java.util.List;
 
 public interface ClientBusiness {
     List<ClientResponseDTO> findAllClientByName(String name);
+
     ClientResponseDTO insertClient(ClientFormDTO clientFormDTO) throws ValidationFailedException;
 }

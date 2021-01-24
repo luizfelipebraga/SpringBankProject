@@ -27,4 +27,8 @@ public class ClientFormDTO {
 
     @NotNull
     private LocalDate birthDate;
+
+	public String getDocument() {
+		return null;
+	}
 }

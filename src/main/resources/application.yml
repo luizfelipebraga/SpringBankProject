@@ -3,10 +3,16 @@ server:
   servlet:
     context-path: /api
 
+
 spring:
   profiles:
     active: local
-
+  kafka:
+    producer:
+      bootstrap-servers: localhost:29092
+    # consumer:
+    #   group-id: group-id
+    #   auto-offset-reset: earliest
 
   datasource:
     password: talent
@@ -37,3 +43,6 @@ swagger:
     version: 1.0
     controller:
       basepackage: com.orange.talent.account.controller
+
+client-kafka:
+  topic: kafka-python-topic

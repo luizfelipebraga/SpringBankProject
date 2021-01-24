@@ -43,6 +43,5 @@ public class Client {
 
     @Column
     @NotNull
-    @NotEmpty
     private LocalDate birthDate;
 }
